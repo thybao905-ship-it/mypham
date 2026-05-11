@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Mỹ Phẩm Coréana - Giới Thiệu</title>
+    <style>
+        /* Thiết lập cơ bản */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333; /* Màu nền ngoài cùng */
+            margin: 0;
+            padding: 20px;
+            color: #ffffff;
+        }
+
+        /* Khung chứa chính */
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            background-color: #500019; /* Màu đỏ rượu đặc trưng trong ảnh */
+            border: 1px solid #700020;
+        }
+
+        /* Banner & Navigation */
+        .header img { display: block; width: 100%; }
+        
+        .nav {
+            background-color: #ff9900;
+            padding: 6px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            border-bottom: 1px solid #fff;
+        }
+        .nav a { color: #fff; text-decoration: none; margin: 0 8px; }
+        .nav a:hover { text-decoration: underline; }
+
+        /* Bố cục chính dùng Table để chính xác theo giao diện cũ */
+        .main-table { width: 100%; border-collapse: collapse; }
+        
+        /* Cột trái (Sidebar) */
+        .sidebar {
+            width: 200px;
+            vertical-align: top;
+            padding: 20px 10px;
+            background-color: #500019;
+        }
+        
+        .menu-list { list-style: none; padding: 0; margin: 0; }
+        .menu-list li { margin-bottom: 2px; }
+        .menu-list img { width: 100%; display: block; }
+
+        /* Form tìm kiếm & đăng nhập */
+        .form-section { margin-top: 25px; text-align: center; }
+        .form-section input { 
+            width: 160px; 
+            margin-bottom: 8px; 
+            padding: 3px;
+            border: none;
+        }
+        .btn-action { 
+            background: linear-gradient(to bottom, #a03030, #601010);
+            color: white; 
+            border: 1px solid #ccc; 
+            padding: 4px 15px; 
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        /* Cột phải (Nội dung) */
+        .content {
+            padding: 30px;
+            vertical-align: top;
+            line-height: 1.6;
+            font-size: 14px;
+            text-align: justify;
+        }
+        .content h1 {
+            font-size: 26px;
+            margin-top: 0;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .intro-image {
+            float: right;
+            margin: 0 0 15px 15px;
+            border: 1px solid #888;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 11px;
+            background-color: #400010;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="banner.gif" alt="Banner MyPham.com">
+    </div>
+
+    <div class="nav">
+        <a href="#">TRANG CHỦ</a> | <a href="#">GIỚI THIỆU</a> | <a href="#">SẢN PHẨM</a> | 
+        <a href="#">HỎI ĐÁP</a> | <a href="#">TƯ VẤN</a> | <a href="#">GIỎ HÀNG</a> | <a href="#">LIÊN HỆ</a>
+    </div>
+
+    <table class="main-table">
+        <tr>
+            <td class="sidebar">
+                <ul class="menu-list">
+                    <a href="#" class="menu-item"><img src="trang_diem_over.gif" width="100"></a>
+                <a href="#" class="menu-item"><img src="duong_da.gif" width="100"></a>
+				 <a href="#" class="menu-item"><img src="nuoc_hoa.gif" width="100"></a>
+				 <a href="#" class="menu-item"><img src="duong_toc.gif" width="100"></a>
+                <a href="#" class="menu-item"><img src="duong_the.gif" width="100"></a>
+                <a href="#" class="menu-item"><img src="nam_gioi.gif" width="100"></a>
+                    </ul>
+
+                <img src="tuongtrung.jpg" width="180" style="margin-top: 20px;">
+
+                <div class="form-section">
+                    <input type="text" name="search">
+                    <button class="btn-action">Tìm kiếm</button>
+                    
+                    <div style="margin-top: 30px;">
+                        <label>Đăng nhập</label><br>
+                        <input type="text" name="user"><br>
+                        <label>Mật khẩu</label><br>
+                        <input type="password" name="pass"><br>
+                        <button class="btn-action">Đăng nhập</button>
+                    </div>
+                </div>
+            </td>
+
+            <td class="content">
+                <h1>GIỚI THIỆU</h1>
+                
+                <p>Hãng mỹ phẩm <b>Coréana</b> được thành lập ngày <b>15/11/1988</b>. Là hãng mỹ phẩm cao cấp đứng đầu trong các hãng mỹ phẩm lớn của Hàn Quốc có uy tín lớn và nổi tiếng nhất Hàn Quốc...</p>
+
+                <img src="gioithieu.jpg" alt="Cô gái Coréana" class="intro-image" width="300">
+
+                <p>Mỹ phẩm <b>Coréana</b> vào Việt Nam tháng 10/1995 - trụ sở chính tại địa chỉ 152 Thái Hà - Đống Đa - Hà Nội. Trong 6 năm liền hãng liên tục mở rộng thị trường và cho đến nay tại Hà Nội có 8 Shop.</p>
+
+                <p>Những năm 60 và 70 việc chăm sóc da, việc sử dụng một bộ dưỡng da (<b>Skincare</b>) chưa được hình thành, kể cả ở các nước Châu Âu: Anh - Pháp - Đức là những chiếc nôi về mỹ phẩm. Khi đó muốn dưỡng da người ta thường chỉ nghĩ đến việc sử dụng kem dưỡng...</p>
+
+                <p>Do khí hậu và thời tiết của Châu Á là ôn đới và cận nhiệt đới, trong khi đó khí hậu của Châu Âu là hàn đới, cộng với sự kết hợp về sự khác biệt chủng tộc nên các hãng mỹ phẩm đã nghiên cứu và sản xuất ra những sản phẩm dưỡng da để phù hợp với từng vùng.</p>
+            </td>
+        </tr>
+    </table>
+
+    <div class="footer">
+        Trang web được xây dựng bởi T3H Corp, 2026 ©
+    </div>
+</div>
+
+</body>
+</html>
